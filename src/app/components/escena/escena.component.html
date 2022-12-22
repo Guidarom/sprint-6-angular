@@ -1,0 +1,33 @@
+<main>
+<div class="body-img "
+    [style.background-image]="'url('+ homeSentences[currentSentence].img +')'"
+    
+    >
+    <div class="container">
+        <div class="row">
+        <div class="col-12 d-grid gap-2 d-flex justify-content-between p-2 ">
+            <button class="btn btn-primary me-md-2 " type="button" (click)="prev()">PREV</button>
+            <button class="btn btn-primary " type="button" (click)="next()">NEXT</button>
+        </div>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <div class="row d-flex justify-content-end">
+            <div class="col-12 text-center p-2">
+            
+                <p class="text-center p-2 border border-dark rounded-pill"
+                   *ngFor="let sentence of homeSentences let i = index"
+                    [ngStyle]="{backgroundColor: currentSentence == i ? 'rgb(240,128,128)' : 'rgba(255,255,255,0.6)'}"
+                    >{{sentence.text}}</p>
+            
+            </div>
+        </div>
+    </div>
+
+</div>
+</main>
+
+<!--  <script src="./escena.component.ts"></script>  -->
+

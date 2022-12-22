@@ -1,0 +1,36 @@
+html, body {
+    
+    background: white !important;
+    margin: 20px !important; 
+    color: #3e4144 !important;
+    -webkit-font-smoothing: antialiased !important; 
+    font-size: 0.3rem !important ;
+    line-height: 1 !important;
+} 
+
+button {
+    background-color: #3D8361 !important;
+    border-radius: 5px !important;
+    border: 0px !important;
+    color: white !important;
+    cursor: pointer !important;
+
+}
+
+button:hover {
+    background-color: #3e4144 !important;
+}
+
+button:focus{ 
+    outline: none !important
+}
+
+.body-img{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:100vh 
+
+    ;
+
+}
